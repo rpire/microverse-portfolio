@@ -35,7 +35,7 @@
   align-items: center;
   background: #1a2236;
   color: #fff;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -71,7 +71,7 @@ header {
 
 header h1 {
   font-size: 50px;
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", sans-serif;
   font-weight: normal;
   margin-top: 1em;
   margin-bottom: 1.25vw;
@@ -79,7 +79,7 @@ header h1 {
 
 header p {
   font-size: 14px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   line-height: 21px;
   font-weight: normal;
   font-style: normal;
