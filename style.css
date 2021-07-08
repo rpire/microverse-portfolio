@@ -35,10 +35,10 @@
 }
 
 .collab-link {
+  max-width: 500px;
   width: 90%;
   height: 50px;
   margin: 7.5% 5%;
-  text-decoration: none;
 }
 
 .collab-button {
@@ -64,7 +64,8 @@
 
 .mosaic-img {
   display: block;
-  max-width: 500px;
+  max-width: 600px;
+  width: 100%;
   flex: 1;
   margin-top: 2.6%;
   margin-bottom: 10px;
@@ -97,6 +98,103 @@
   flex-basis: 100%;
   margin-top: 5vw;
   margin-bottom: 0;
+}
+
+.works {
+  display: grid;
+  grid-template-areas: auto / 100%;
+  width: 100%;
+}
+
+.works h2 {
+  font-size: 50px;
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 100%;
+  margin: 5% 0 5% 10%;
+}
+
+.works-img {
+  display: block;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.works-box {
+  background-color: #1a2236;
+  color: #fff;
+  max-width: 600px;
+  width: 100%;
+  padding-bottom: 3.875%;
+  margin: auto;
+  margin-top: -2px;
+}
+
+.works-box h3 {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 80%;
+  margin: 6.25% 0 5% 6.25%;
+}
+
+.lang-container {
+  display: flex;
+  margin: 6.5%;
+}
+
+.lang-box {
+  background-color: #98dede;
+  color: #1a2236;
+  font-size: 10.33px;
+  font-weight: 300;
+  line-height: 80%;
+  font-family:  "Poppins", sans-serif;
+  padding: 1.8% 3.6%;
+  margin-right: 3.6%;
+}
+
+.works-button {
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 24px;
+  width: 55.625%;
+  padding: 3.125% 0;
+  margin-left: 6.25%;
+  border: 2px solid #fff;
+}
+
+.works-button span {
+  margin-right: 6.75%;
+}
+
+.works-button:hover {
+  background-color: #fff;
+  color: #1a2236;
+}
+
+.works-arrow {
+  width: 21px;
+  height: 15px;
+  background-image: url(./Media/Union.svg);
+  display: block;
+  align-self: center;
+}
+
+.works-button:hover .works-arrow {
+  background-image: url(./Media/Union\ \(1\).svg);
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
