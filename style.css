@@ -1,0 +1,107 @@
+.burger {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 6% 5% 0 10%;
+}
+
+.burger-element-1 {
+  background-color: #c4c4c4; /* This color doesn't mach the template example */
+  width: 20px;
+  height: 2px;
+}
+
+.burger-element-2 {
+  background-color: #c4c4c4; /* This color doesn't mach the template example */
+  width: 20px;
+  height: 2px;
+  margin-top: 4px;
+}
+
+.burger-element-3 {
+  background-color: #c4c4c4; /* This color doesn't mach the template example */
+  width: 20px;
+  height: 2px;
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+
+.collaboration {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100vw;
+  align-items: center;
+}
+
+.collab-link {
+  width: 90%;
+  height: 50px;
+  margin: 7.5% 5%;
+  text-decoration: none;
+}
+
+.collab-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #1a2236;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  width: 100%;
+  height: 100%;
+}
+
+.collab-button:hover {
+  background: #fff;
+  color: #1a2236;
+  border: 2px solid #1a2236;
+}
+
+.mosaic-img {
+  display: block;
+  max-width: 500px;
+  flex: 1;
+  margin-top: 2.6%;
+  margin-bottom: 10px;
+}
+
+.hello {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #1a2236;
+  margin: 21.5% 5% 5% 10%;
+}
+
+.hello h1 {
+  font-size: 50px;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: normal;
+  line-height: 100%;
+  margin-top: 0;
+  margin-bottom: 1.25vw;
+}
+
+.hello p {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  line-height: 21px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: -0.01em;
+  flex-basis: 100%;
+  margin-top: 5vw;
+  margin-bottom: 0;
+}
+
+body {
+  background-color: #fff;
+  background-image: url(./Media/image_geometry_1.svg);
+  background-repeat: no-repeat;
+  margin: 0;
+}
