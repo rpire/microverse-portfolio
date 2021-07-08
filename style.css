@@ -1,20 +1,32 @@
-#burger-container {
-  width: 100%;
+.burger {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin: 6% 5% 0 10%;
 }
 
-#burger-bar-2 {
+.burger-element-1 {
+  background-color: #c4c4c4; /* This color doesn't mach the template example */
+  width: 20px;
+  height: 2px;
+}
+
+.burger-element-2 {
+  background-color: #c4c4c4; /* This color doesn't mach the template example */
+  width: 20px;
+  height: 2px;
   margin-top: 4px;
 }
 
-#burger-bar-3 {
+.burger-element-3 {
+  background-color: #c4c4c4; /* This color doesn't mach the template example */
+  width: 20px;
+  height: 2px;
   margin-top: 4px;
   margin-bottom: 2px;
 }
 
-#collaboration {
+.collaboration {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -22,13 +34,13 @@
   align-items: center;
 }
 
-#collab-link {
+.collab-link {
   width: 90%;
   height: 50px;
-  margin: 10% 5%;
+  margin: 7.5% 5% ;
 }
 
-#collab-button {
+.collab-button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,41 +55,38 @@
   height: 100%;
 }
 
-#collab-button:hover {
+.collab-button:hover {
   background: #fff;
   color: #1a2236;
   border: 2px solid #1a2236;
 }
 
-#mosaic-img {
+.mosaic-img {
   display: block;
-  flex: 1 1 100%;
+  max-width: 500px;
+  flex: 1;
+  margin-top: 2.6%;
   margin-bottom: 10px;
 }
 
-.burger-element {
-  background-color: #c4c4c4; /* This color doesn't mach the template example */
-  width: 20px;
-  height: 2px;
-}
-
-header {
+.hello {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   color: #1a2236;
-  margin: 19px 5% 0 10%;
+  margin: 21.5% 5% 5% 10%;
 }
 
-header h1 {
+.hello h1 {
   font-size: 50px;
   font-family: "Playfair Display", sans-serif;
   font-weight: normal;
-  margin-top: 1em;
+  line-height: 100%;
+  margin-top: 0;
   margin-bottom: 1.25vw;
 }
 
-header p {
+.hello p {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   line-height: 21px;
@@ -86,7 +95,7 @@ header p {
   letter-spacing: -0.01em;
   flex-basis: 100%;
   margin-top: 5vw;
-  margin-bottom: 5vw;
+  margin-bottom: 0;
 }
 
 body {
