@@ -28,10 +28,13 @@
   margin: 10% 5%;
 }
 
-#collab-link button {
-  background: #1A2236;
-  color: #ffffff;
-  border: none;
+#collab-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #1a2236;
+  color: #fff;
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 500;
@@ -40,11 +43,12 @@
   height: 100%;
 }
 
-#collab-link button:hover {
-  background: #ffffff;
-  color: #1A2236;
-  border: 2px solid #1A2236
+#collab-button:hover {
+  background: #fff;
+  color: #1a2236;
+  border: 2px solid #1a2236;
 }
+
 #mosaic-img {
   display: block;
   flex: 1 1 100%;
@@ -52,7 +56,7 @@
 }
 
 .burger-element {
-  background-color: #C4C4C4; /* This color doesn't mach the template example */
+  background-color: #c4c4c4; /* This color doesn't mach the template example */
   width: 20px;
   height: 2px;
 }
@@ -61,7 +65,7 @@ header {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  color: #1A2236;
+  color: #1a2236;
   margin: 19px 5% 0 10%;
 }
 
@@ -83,11 +87,10 @@ header p {
   flex-basis: 100%;
   margin-top: 5vw;
   margin-bottom: 5vw;
-  width: 85%;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   background-image: url(./Media/image_geometry_1.svg);
   background-repeat: no-repeat;
   margin: 0;
