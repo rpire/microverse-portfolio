@@ -1,0 +1,94 @@
+#burger-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#burger-bar-2 {
+  margin-top: 4px;
+}
+
+#burger-bar-3 {
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+
+#collaboration {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100vw;
+  align-items: center;
+}
+
+#collab-link {
+  width: 90%;
+  height: 50px;
+  margin: 10% 5%;
+}
+
+#collab-link button {
+  background: #1A2236;
+  color: #ffffff;
+  border: none;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  width: 100%;
+  height: 100%;
+}
+
+#collab-link button:hover {
+  background: #ffffff;
+  color: #1A2236;
+  border: 2px solid #1A2236
+}
+#mosaic-img {
+  display: block;
+  flex: 1 1 100%;
+  margin-bottom: 10px;
+}
+
+.burger-element {
+  background-color: #C4C4C4; /* This color doesn't mach the template example */
+  width: 20px;
+  height: 2px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #1A2236;
+  margin: 19px 5% 0 10%;
+}
+
+header h1 {
+  font-size: 50px;
+  font-family: "Playfair Display";
+  font-weight: normal;
+  margin-top: 1em;
+  margin-bottom: 1.25vw;
+}
+
+header p {
+  font-size: 14px;
+  font-family: "Poppins";
+  line-height: 21px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: -0.01em;
+  flex-basis: 100%;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  width: 85%;
+}
+
+body {
+  background-color: #ffffff;
+  background-image: url(./Media/image_geometry_1.svg);
+  background-repeat: no-repeat;
+  margin: 0;
+}
