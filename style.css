@@ -35,10 +35,10 @@
 }
 
 .collab-link {
+  max-width: 500px;
   width: 90%;
   height: 50px;
   margin: 7.5% 5%;
-  text-decoration: none;
 }
 
 .collab-button {
@@ -64,7 +64,8 @@
 
 .mosaic-img {
   display: block;
-  max-width: 500px;
+  max-width: 600px;
+  width: 100%;
   flex: 1;
   margin-top: 2.6%;
   margin-bottom: 10px;
@@ -87,16 +88,248 @@
   margin-bottom: 1.25vw;
 }
 
-.hello p {
+p {
+  color: #1a2236;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   line-height: 21px;
   font-weight: normal;
   font-style: normal;
-  letter-spacing: -0.01em;
   flex-basis: 100%;
-  margin-top: 5vw;
-  margin-bottom: 0;
+  margin-top: 5%;
+  max-width: 500px;
+}
+
+.hello p {
+  letter-spacing: -0.01em;
+}
+
+.works-container {
+  display: grid;
+  grid-template-columns: 100%;
+  list-style-type: none;
+  width: 100%;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.works h2 {
+  font-size: 50px;
+  font-family: "Playfair Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 100%;
+  margin: 5% 0 5% 10%;
+}
+
+.works-img {
+  display: block;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.works-box {
+  background-color: #1a2236;
+  color: #fff;
+  max-width: 600px;
+  width: 100%;
+  padding-top: 1px;
+  padding-bottom: 4%;
+  margin: auto;
+  margin-top: -2px;
+}
+
+.works-box h3 {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 80%;
+  margin: 6.25% 0 5% 6.25%;
+}
+
+.lang-container {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 6.25% 0 6.25% 6.25%;
+}
+
+.lang-box {
+  background-color: #98dede;
+  color: #000;
+  font-size: 10.33px;
+  font-weight: 300;
+  line-height: 80%;
+  font-family: "Poppins", sans-serif;
+  padding: 2.16% 3.8%;
+  margin-right: 3.6%;
+}
+
+.works-button {
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 24px;
+  width: 55.625%;
+  padding: 3.125% 0;
+  margin-left: 6.25%;
+  border: 2px solid #fff;
+}
+
+.works-button span {
+  margin-right: 6.75%;
+}
+
+.works-button:hover {
+  background-color: #fff;
+  color: #1a2236;
+}
+
+.works-arrow {
+  width: 21px;
+  height: 15px;
+  background-image: url(./Media/Union.svg);
+  display: block;
+  align-self: center;
+}
+
+.works-button:hover .works-arrow {
+  background-image: url(./Media/union-2.svg);
+}
+
+.about h2 {
+  color: #1a2236;
+  font-size: 50px;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 100%;
+  margin: 17.5% 0 6.25% 5%;
+}
+
+.about h3 {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  margin-top: 7.765vh;
+  margin-left: 17.36%;
+}
+
+.about p {
+  margin-bottom: 10%;
+  margin-left: 5%;
+}
+
+.about img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 102px;
+  height: 102px;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 13.975vh repeat(3, 45vh);
+  grid-gap: 1.67%;
+  padding-bottom: 48px;
+  margin-bottom: 50px;
+}
+
+.cv-box {
+  display: flex;
+  background-color: #1a2236;
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  border: 2px solid #1a2236;
+}
+
+.cv-box:hover {
+  background-color: #fff;
+  color: #1a2236;
+}
+
+.cv-box span {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 4.51% 6.94% 4.51% 27.43%;
+}
+
+.cv-box:hover span {
+  color: #1a2236;
+}
+
+.cv-box div {
+  align-self: center;
+  width: 26px;
+  height: 26px;
+  background-image: url(./Media/ic_download.svg);
+  background-repeat: no-repeat;
+}
+
+.about li {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+}
+
+.languages {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #1c528a;
+  max-width: 500px;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.frameworks {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #e2505c;
+  background-repeat: no-repeat;
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.skills {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #febf52;
+  background-repeat: no-repeat;
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin-top: 7.3%;
+  margin-left: 3.47%;
 }
 
 body {
