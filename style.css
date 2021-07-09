@@ -104,10 +104,13 @@ p {
   letter-spacing: -0.01em;
 }
 
-.works {
+.works-container {
   display: grid;
   grid-template-columns: 100%;
+  list-style-type: none;
   width: 100%;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .works h2 {
@@ -131,7 +134,8 @@ p {
   color: #fff;
   max-width: 600px;
   width: 100%;
-  padding-bottom: 3.875%;
+  padding-top: 1px;
+  padding-bottom: 4%;
   margin: auto;
   margin-top: -2px;
 }
@@ -147,17 +151,19 @@ p {
 
 .lang-container {
   display: flex;
-  margin: 6.5%;
+  list-style-type: none;
+  padding: 0;
+  margin: 6.25% 0 6.25% 6.25%;
 }
 
 .lang-box {
   background-color: #98dede;
-  color: #1a2236;
+  color: #000;
   font-size: 10.33px;
   font-weight: 300;
   line-height: 80%;
   font-family: "Poppins", sans-serif;
-  padding: 1.8% 3.6%;
+  padding: 2.16% 3.8%;
   margin-right: 3.6%;
 }
 
@@ -213,7 +219,7 @@ p {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-style: normal;
-  margin-top: 17.36%;
+  margin-top: 7.765vh;
   margin-left: 17.36%;
 }
 
@@ -233,8 +239,11 @@ p {
 .about-container {
   display: grid;
   grid-template-columns: 100%;
-  grid-row-gap: 1.8%;
-  margin-bottom: 30.625%;
+  grid-template-rows: 13.975vh repeat(3, 45vh);
+  grid-gap: 1.67%;
+  padding-bottom: 48px;
+  margin-bottom: 50px;
+
 }
 
 .cv-box {
@@ -242,15 +251,13 @@ p {
   background-color: #1a2236;
   width: 90%;
   max-width: 500px;
-  margin: 0 auto 8.33%;
+  margin: auto;
+  border: 2px solid #1a2236;
 }
 
 .cv-box:hover {
-  box-sizing: border-box;
   background-color: #fff;
   color: #1a2236;
-  border: 1px solid #1a2236;
-  margin-bottom: 7.7%;
 }
 
 .cv-box span {
@@ -259,7 +266,7 @@ p {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   line-height: 24px;
-  padding: 4.51% 6.94% 4.51% 27.43%;
+  margin: 4.51% 6.94% 4.51% 27.43%;
 }
 
 .cv-box:hover span {
@@ -274,6 +281,16 @@ p {
   background-repeat: no-repeat;
 }
 
+.about li {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 27px;
+  letter-spacing: -0.0525em;
+}
+
 .languages {
   position: relative;
   display: flex;
@@ -281,8 +298,8 @@ p {
   background-color: #1c528a;
   max-width: 500px;
   width: 90%;
-  margin: auto;
-  height: 289px;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .frameworks {
@@ -293,8 +310,7 @@ p {
   background-repeat: no-repeat;
   max-width: 500px;
   width: 90%;
-  margin: auto;
-  height: 289px;
+  margin: 0 auto;
 }
 
 .skills {
@@ -305,8 +321,7 @@ p {
   background-repeat: no-repeat;
   max-width: 500px;
   width: 90%;
-  margin: auto;
-  height: 289px;
+  margin: 0 auto;
 }
 
 a {
@@ -316,16 +331,6 @@ a {
 ul {
   margin-top: 7.3%;
   margin-left: 3.47%;
-}
-
-li {
-  color: #fff;
-  font-size: 18px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  line-height: 27px;
-  letter-spacing: -0.0525em;
 }
 
 body {
