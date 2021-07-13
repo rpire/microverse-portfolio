@@ -239,7 +239,7 @@ p {
 .about-container {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 13.975vh repeat(3, 45vh);
+  grid-template-rows: 80px repeat(3, 288px);
   grid-gap: 1.67%;
   padding-bottom: 48px;
   margin-bottom: 50px;
@@ -447,4 +447,38 @@ textarea::placeholder {
 
 .contact-me h2, .contact-me p {
   align-self: flex-start;
+}
+
+footer {
+  background-color: #1a2236;
+  height: 150px;
+}
+
+.get-resume {
+  display: flex;
+  align-items: baseline;
+}
+
+footer a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #92DCDC;
+  margin: 32px 6.25% 30.5px 5%;
+}
+
+.get-resume img {
+  width: 16.84px;
+  height: 16.84px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
