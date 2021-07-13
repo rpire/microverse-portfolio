@@ -193,13 +193,13 @@
     </p>
     <form>
       <label>
-        <input type="text" placeholder=" Your name">
+        <input type="text" maxlength="30" placeholder=" Your name" name="name" required>
       </label>
       <label>
-        <input type="email" placeholder=" Your email">
+        <input type="email" placeholder=" Your email" name="email" required>
       </label>
       <label>
-        <textarea placeholder=" Enter your message here..."></textarea>
+        <textarea placeholder="Enter your message here..."  maxlength="500" required></textarea>
       </label>
       <button type="submit">Start collaboration</button>
     </form>
