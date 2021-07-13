@@ -367,7 +367,7 @@ input {
   height: 52px;
   left: 16px;
   top: 4400px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #dfdfe0;
   box-sizing: border-box;
   border-radius: 4px;
@@ -379,7 +379,7 @@ input::placeholder {
   font-size: 10px;
   top: 4px;
   left: 16px;
-} 
+}
 
 textarea {
   font-family: "Poppins", sans-serif;
@@ -387,7 +387,7 @@ textarea {
   height: 112px;
   left: 16px;
   top: 4520px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #dfdfe0;
   box-sizing: border-box;
   border-radius: 4px;
@@ -399,7 +399,7 @@ textarea::placeholder {
   font-size: 14px;
   top: 15px;
   left: 16px;
-} 
+}
 
 .contact-me button {
   display: flex;
@@ -435,17 +435,18 @@ textarea::placeholder {
 }
 
 .contact-me p {
-  font-family: "Poppins" sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
   letter-spacing: -0.01em;
-  color: #1A2236;
+  color: #1a2236;
   margin: 3.1056vh 0 5vh 5.625%;
 }
 
-.contact-me h2, .contact-me p {
+.contact-me h2,
+.contact-me p {
   align-self: flex-start;
 }
 
@@ -460,12 +461,12 @@ footer {
 }
 
 footer a {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #92DCDC;
+  color: #92dcdc;
   margin: 32px 6.25% 30.5px 5%;
 }
 
