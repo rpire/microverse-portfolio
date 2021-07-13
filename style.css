@@ -338,3 +338,9 @@ body {
   background-repeat: no-repeat;
   margin: 0;
 }
+
+.contact-me {
+  background-color: #f9f9fa;
+  background-image: url(./Media/image_geometry_1.svg);
+  background-repeat: no-repeat;
+}
