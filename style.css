@@ -649,8 +649,7 @@ footer ul {
   #about-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "squares about";
+    grid-template-areas: "squares about";
     width: 100%;
     margin-right: 0;
   }
@@ -1038,8 +1037,8 @@ footer ul {
     width: 30%;
     margin-left: 10%;
   }
-
 }
+
 @media screen and (min-width: 1336px) {
   .hello h1 {
     font-size: 110px;
