@@ -575,7 +575,6 @@ footer ul {
 /* Start of media queries */
 
 @media screen and (min-width: 1025px) {
-
   body {
     background-image: none;
   }
@@ -650,7 +649,7 @@ footer ul {
   #about-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
       "squares about";
     width: 100%;
     margin-right: 0;
@@ -742,6 +741,7 @@ footer ul {
 
   label input {
     width: 100%;
+    margin-bottom: 42px;
   }
 
   .txt-area {
@@ -756,6 +756,11 @@ footer ul {
 
   .works {
     margin-bottom: 216px;
+  }
+
+  footer ul {
+    width: 30%;
+    margin-right: 10%;
   }
 
   .works ul,
@@ -826,6 +831,27 @@ footer ul {
   }
 
   .project-3 .works-box {
+    position: absolute;
+    display: none;
+    bottom: 0;
+    max-width: none;
+  }
+
+  .project-4 .works-box {
+    position: absolute;
+    display: none;
+    bottom: 0;
+    max-width: none;
+  }
+
+  .project-5 .works-box {
+    position: absolute;
+    display: none;
+    bottom: 0;
+    max-width: none;
+  }
+
+  .project-6 .works-box {
     position: absolute;
     display: none;
     bottom: 0;
@@ -910,22 +936,8 @@ footer ul {
     width: 100%;
   }
 
-  .project-4 .works-box {
-    position: absolute;
-    display: none;
-    bottom: 0;
-    max-width: none;
-  }
-
   .project-4 .works-box:hover {
     display: block;
-  }
-
-  .project-5 .works-box {
-    position: absolute;
-    display: none;
-    bottom: 0;
-    max-width: none;
   }
 
   .project-5 .works-box:hover {
@@ -959,13 +971,6 @@ footer ul {
     position: relative;
     max-width: none;
     width: 32.29%;
-  }
-
-  .project-6 .works-box {
-    position: absolute;
-    display: none;
-    bottom: 0;
-    max-width: none;
   }
 
   .project-6 .works-box:hover {
@@ -1002,10 +1007,6 @@ footer ul {
     margin-bottom: 82px;
   }
 
-  label input {
-    margin-bottom: 42px;
-  }
-
   textarea {
     margin-bottom: 40px;
   }
@@ -1038,13 +1039,7 @@ footer ul {
     margin-left: 10%;
   }
 
-  footer ul {
-    width: 30%;
-    margin-right: 10%;
-  }
-
 }
-
 @media screen and (min-width: 1336px) {
   .hello h1 {
     font-size: 110px;
