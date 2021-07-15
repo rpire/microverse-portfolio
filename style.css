@@ -82,7 +82,12 @@
 nav {
   display: none;
   background-color: #fff;
-  box-shadow: 0px 0.5px 0px #dddfe6;
+  box-shadow: 0 0.5px 0 #dddfe6;
+}
+
+ul {
+  margin-top: 7.3%;
+  margin-left: 3.47%;
 }
 
 nav ul {
@@ -93,6 +98,20 @@ nav ul {
   height: 100px;
   padding: 0;
   margin: 0 37.22%;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer a {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #92dcdc;
+  margin: 32px 6.25% 30.5px 10%;
 }
 
 nav a {
@@ -370,15 +389,6 @@ p {
   margin: 0 auto;
 }
 
-a {
-  text-decoration: none;
-}
-
-ul {
-  margin-top: 7.3%;
-  margin-left: 3.47%;
-}
-
 body {
   background-color: #fff;
   background-image: url(./Media/image_geometry_1.svg);
@@ -508,16 +518,6 @@ footer {
   align-items: baseline;
 }
 
-footer a {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #92dcdc;
-  margin: 32px 6.25% 30.5px 10%;
-}
-
 .get-resume img {
   width: 16.84px;
   height: 16.84px;
@@ -574,7 +574,8 @@ footer ul {
 
 /* Start of media queries */
 
-@media screen and (min-width: 1025px) {  
+@media screen and (min-width: 1025px) {
+
   body {
     background-image: none;
   }
@@ -592,8 +593,8 @@ footer ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "nav nav"
-    "hello mosaic";
+      "nav nav"
+      "hello mosaic";
     padding-bottom: 85px;
   }
 
@@ -632,7 +633,7 @@ footer ul {
     right: 0;
     width: 27.5%;
   }
-  
+
   .collaboration {
     grid-area: mosaic;
   }
@@ -649,8 +650,8 @@ footer ul {
   #about-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "squares about";
+    grid-template-areas: 
+      "squares about";
     width: 100%;
     margin-right: 0;
   }
@@ -757,7 +758,8 @@ footer ul {
     margin-bottom: 216px;
   }
 
-  .works ul, .c1 {
+  .works ul,
+  .c1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -778,7 +780,7 @@ footer ul {
     font-size: 110px;
     margin-bottom: 12.625%;
     transform: rotate(270deg);
-    height: fit-content;
+    height: 110px;
     width: 23%;
   }
 
@@ -794,7 +796,7 @@ footer ul {
     max-width: none;
     width: 66%;
   }
-  
+
   .project-1 img,
   .project-2 img,
   .project-3 img,
@@ -815,7 +817,21 @@ footer ul {
   .works-box:hover {
     display: block;
   }
-  
+
+  .project-2 .works-box {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    max-width: none;
+  }
+
+  .project-3 .works-box {
+    position: absolute;
+    display: none;
+    bottom: 0;
+    max-width: none;
+  }
+
   .works-img:hover ~ .works-box {
     display: block;
   }
@@ -847,13 +863,6 @@ footer ul {
     width: 52.4%;
   }
 
-  .project-2 .works-box {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    max-width: none;
-  }
-
   .project-2 .works-box:hover {
     display: block;
   }
@@ -880,13 +889,6 @@ footer ul {
     width: 100%;
   }
 
-  .project-3 .works-box {
-    position: absolute;
-    display: none;
-    bottom: 0;
-    max-width: none;
-  }
-
   .project-3 .works-box:hover {
     display: block;
   }
@@ -901,14 +903,15 @@ footer ul {
     width: 32.3%;
   }
 
-  .project-4, .project-5 {
+  .project-4,
+  .project-5 {
     position: relative;
     max-width: none;
     width: 100%;
   }
 
   .project-4 .works-box {
-    position:absolute;
+    position: absolute;
     display: none;
     bottom: 0;
     max-width: none;
@@ -919,7 +922,7 @@ footer ul {
   }
 
   .project-5 .works-box {
-    position:absolute;
+    position: absolute;
     display: none;
     bottom: 0;
     max-width: none;
