@@ -76,7 +76,7 @@
   flex-direction: column;
   align-items: center;
   color: #1a2236;
-  margin: 21.5% 5% 5% 5%;
+  margin: 21.5% 5% 0 5%;
 }
 
 nav {
@@ -148,6 +148,7 @@ p {
 }
 
 .works h2 {
+  align-self: center;
   font-size: 50px;
   font-family: "Playfair Display", sans-serif;
   font-style: normal;
@@ -225,6 +226,12 @@ p {
   color: #1a2236;
 }
 
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .works-arrow {
   width: 21px;
   height: 15px;
@@ -238,6 +245,7 @@ p {
 }
 
 .about h2 {
+  align-self: flex-start;
   color: #1a2236;
   font-size: 50px;
   font-family: "Playfair Display", sans-serif;
@@ -279,12 +287,16 @@ p {
   margin-bottom: 50px;
 }
 
+.about-link {
+  width: 100%;
+}
+
 .cv-box {
   display: flex;
   background-color: #1a2236;
   width: 90%;
   max-width: 500px;
-  margin: auto;
+  margin-left: 5%;
   margin-bottom: 40px;
   border: 2px solid #1a2236;
 }
@@ -450,6 +462,7 @@ textarea::placeholder {
   height: 44px;
   width: 100%;
   margin-bottom: 10vh;
+  margin-left: 0;
 }
 
 .contact-me button:hover {
@@ -519,6 +532,10 @@ footer ul {
   margin: 0;
 }
 
+.deco-0 {
+  display: none;
+}
+
 .deco-1 {
   display: none;
 }
@@ -536,6 +553,22 @@ footer ul {
 }
 
 .deco-5 {
+  display: none;
+}
+
+.deco-7 {
+  display: none;
+}
+
+.deco-8 {
+  display: none;
+}
+
+.deco-9 {
+  display: none;
+}
+
+#mos-2 {
   display: none;
 }
 
@@ -561,14 +594,56 @@ footer ul {
     grid-template-areas:
     "nav nav"
     "hello mosaic";
+    padding-bottom: 85px;
   }
 
   .hello {
+    position: relative;
     grid-area: hello;
+    padding-bottom: 150px;
+    margin: 192px 0 0 22%;
+  }
+
+  .hello h1 {
+    font-size: 80px;
+    line-height: 100%;
+    margin-right: 13%;
+  }
+
+  .hello p {
+    margin-right: 13%;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .collab-button {
+    margin-top: 59px;
+    margin-right: 13%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    width: 54.27%;
+  }
+
+  .deco-0 {
+    display: block;
+    position: absolute;
+    bottom: 1.5%;
+    right: 0;
+    width: 27.5%;
   }
   
   .collaboration {
     grid-area: mosaic;
+  }
+
+  #mos-1 {
+    display: none;
+  }
+
+  #mos-2 {
+    max-width: none;
+    display: block;
   }
 
   #about-wrapper {
@@ -577,45 +652,91 @@ footer ul {
     grid-template-areas:
     "squares about";
     width: 100%;
+    margin-right: 0;
   }
 
   #about {
     grid-area: about;
+    margin-left: 10%;
   }
 
   .about-container {
+    position: relative;
     display: grid;
     grid-gap: 0;
     padding-bottom: 48px;
     margin-bottom: 50px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 289px 289px;
     grid-template-rows: 289px 289px;
     grid-area: squares;
+    margin-left: 5%;
+  }
+
+  .about h2 {
+    font-size: 110px;
+  }
+
+  .about p {
+    max-width: none;
+    margin-right: 15%;
+    margin-bottom: 0;
+    flex-basis: auto;
+  }
+
+  .about-link {
+    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+    width: 35.27%;
+    height: 70px;
+    margin-top: 42px;
+  }
+
+  .cv-box {
+    width: 100%;
+    height: 70px;
+    padding-right: 5%;
+    margin-left: 13%;
+  }
+
+  .about span {
+    margin: auto;
+  }
+
+  .deco-7 {
+    display: block;
+    left: calc(5% + 288px + 60px);
+    bottom: 6% !important;
+    width: 31% !important;
+    height: 222px !important;
   }
 
   .languages {
-    width: 100%;
+    width: 289px;
     margin: 0;
   }
 
   .frameworks {
-    width: 100%;
+    width: 289px;
     margin: 0;
   }
 
   .skills {
-    width: 100%;
+    width: 289px;
     margin: 0;
   }
 
   form {
+    max-width: none;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 50%;
+    margin: 0 25%;
   }
 
   label {
-    width: 43.5424%;
+    width: 255px;
   }
 
   label input {
@@ -624,6 +745,16 @@ footer ul {
 
   .txt-area {
     width: 100%;
+  }
+
+  .contact-me button {
+    width: 255px;
+    align-self: center;
+    margin-left: 30%;
+  }
+
+  .works {
+    margin-bottom: 216px;
   }
 
   .works ul, .c1 {
@@ -642,9 +773,10 @@ footer ul {
   }
 
   .works h2 {
+    align-self: flex-end;
     align-self: center;
     font-size: 110px;
-    margin: 0;
+    margin-bottom: 12.625%;
     transform: rotate(270deg);
     height: fit-content;
     width: 23%;
@@ -663,7 +795,12 @@ footer ul {
     width: 66%;
   }
   
-  .project-1 img {
+  .project-1 img,
+  .project-2 img,
+  .project-3 img,
+  .project-4 img,
+  .project-5 img,
+  .project-6 img {
     max-width: none;
     width: 100%;
   }
@@ -758,7 +895,6 @@ footer ul {
     display: block;
     width: 17.95%;
     align-self: flex-end;
-
   }
 
   .c3 {
@@ -833,4 +969,81 @@ footer ul {
     display: block;
   }
 
+  .works h3 {
+    font-size: 230%;
+  }
+
+  .c21 h3,
+  .c3 h3,
+  .c4 h3 {
+    font-size: 23px;
+  }
+
+  .contact-me {
+    position: relative;
+    align-items: center;
+    background-image: none;
+  }
+
+  .contact-me h2 {
+    align-self: center;
+    font-size: 110px;
+    margin: 0;
+    margin-bottom: 40px;
+    margin-top: 168px;
+  }
+
+  .contact-me p {
+    align-self: center;
+    margin: 0;
+    margin-bottom: 82px;
+  }
+
+  label input {
+    margin-bottom: 42px;
+  }
+
+  textarea {
+    margin-bottom: 40px;
+  }
+
+  .deco-8 {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 18.26%;
+  }
+
+  .deco-9 {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    width: 20.35%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  footer div {
+    width: 30%;
+    margin-left: 10%;
+  }
+
+  footer ul {
+    width: 30%;
+    margin-right: 10%;
+  }
+
+}
+
+@media screen and (min-width: 1336px) {
+  .hello h1 {
+    font-size: 110px;
+  }
 }
