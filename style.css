@@ -590,7 +590,7 @@ footer ul {
 
   #hello-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 48.75%;
     grid-template-areas:
       "nav nav"
       "hello mosaic";
@@ -598,6 +598,7 @@ footer ul {
   }
 
   .hello {
+    align-items: flex-start;
     position: relative;
     grid-area: hello;
     padding-bottom: 150px;
@@ -614,6 +615,11 @@ footer ul {
     margin-right: 13%;
     font-size: 14px;
     line-height: 21px;
+    flex-basis: 0;
+  }
+
+  .collab-link {
+    margin: 0;
   }
 
   .collab-button {
@@ -628,8 +634,8 @@ footer ul {
   .deco-0 {
     display: block;
     position: absolute;
-    bottom: 1.5%;
-    right: 0;
+    bottom: 0;
+    right: 2.5%;
     width: 27.5%;
   }
 
@@ -644,11 +650,12 @@ footer ul {
   #mos-2 {
     max-width: none;
     display: block;
+    margin: 0;
   }
 
   #about-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: calc(578px + 5%) 1fr;
     grid-template-areas: "squares about";
     width: 100%;
     margin-right: 0;
@@ -672,13 +679,13 @@ footer ul {
   }
 
   .about h2 {
-    font-size: 110px;
+    font-size: 90px;
+    margin: 28px 0 30px 0;
   }
 
   .about p {
     max-width: none;
-    margin-right: 15%;
-    margin-bottom: 0;
+    margin: 0 15% 0 0;
     flex-basis: auto;
   }
 
@@ -695,7 +702,7 @@ footer ul {
     width: 100%;
     height: 70px;
     padding-right: 5%;
-    margin-left: 13%;
+    margin-left: 0;
   }
 
   .about span {
@@ -731,11 +738,11 @@ footer ul {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 50%;
-    margin: 0 25%;
+    margin: 0 31.25%;
   }
 
   label {
-    width: 255px;
+    width: 46.8%;
   }
 
   label input {
@@ -780,8 +787,7 @@ footer ul {
 
   .works h2 {
     align-self: flex-end;
-    align-self: center;
-    font-size: 110px;
+    font-size: 90px;
     margin-bottom: 12.625%;
     transform: rotate(270deg);
     height: 110px;
@@ -1039,8 +1045,56 @@ footer ul {
   }
 }
 
-@media screen and (min-width: 1336px) {
+@media screen and (min-width: 1280px) {
   .hello h1 {
     font-size: 110px;
+  }
+
+  .works h2 {
+    font-size: 110px;
+  }
+
+  #about-wrapper {
+    display: grid;
+    grid-template-columns: 51.25% 1fr;
+    grid-template-areas: "squares about";
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .about-container {
+    margin-left: 15%;
+  }
+
+  .about h2 {
+    font-size: 110px;
+  }
+}
+
+@media screen and (min-width: 1385px) {
+  .about-container {
+    margin-left: 21.6%;
+}
+
+@media screen and (min-width: 1645px) {
+  #hello-wrapper {
+    grid-template-columns: 1fr 40%;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40vh 40vh;
+  }
+
+  .languages,
+  .frameworks,
+  .skills {
+    max-width: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  .deco-7 {
+    left: 71.6%
   }
 }
