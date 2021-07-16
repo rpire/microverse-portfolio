@@ -114,6 +114,14 @@ footer a {
   margin: 32px 6.25% 30.5px 10%;
 }
 
+.get-cv-link {
+  border: 2px solid #1a2236;
+}
+
+.get-cv-link:hover {
+  border-bottom: 2px solid #92dcdc;
+}
+
 nav a {
   font-family: "Poppins", sans-serif;
   font-style: normal;
