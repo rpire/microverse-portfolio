@@ -7,7 +7,7 @@
 ![screenshot](desktop_screenshot.png)
 > Desktop version
 
-![screenshot](mobile-screenshot.png)
+![screenshot](mobile_screenshot.png)
 > Mobile version
 
 The project consists in a mobile and desktop skeleton for a portfolio webpage. Feel free to try it out and explore the code as much as you like!
