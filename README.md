@@ -4,10 +4,10 @@
 
 > This project is meant to be an HTML & CSS exercise from the Microverse Program's Module 1.
 
-[screenshot](./Media/desktop-screenshot.png)
+![screenshot](./Media/desktop-screenshot.png)
 > Desktop version
 
-[screenshot](./Media/mobile-screenshot.png)
+![screenshot](./Media/mobile-screenshot.png)
 > Mobile version
 
 The project consists in a mobile and desktop skeleton for a portfolio webpage. Feel free to try it out and explore the code as much as you like!
