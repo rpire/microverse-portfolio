@@ -4,7 +4,7 @@
 
 > This project is meant to be an HTML & CSS exercise from the Microverse Program's Module 1.
 
-![screenshot](./Media/desktop-screenshot.png)
+![screenshot](desktop_screenshot.png)
 > Desktop version
 
 ![screenshot](./Media/mobile-screenshot.png)
