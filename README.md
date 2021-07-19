@@ -20,7 +20,7 @@ The project consists in a mobile and desktop skeleton for a portfolio webpage. F
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://rpire.github.io/microverse-portfolio)
 
 
 ## Getting Started
