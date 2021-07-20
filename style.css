@@ -395,7 +395,6 @@ p {
   max-width: 500px;
   width: 90%;
   margin: 0 auto;
-  
 }
 
 .skills li,
@@ -430,6 +429,8 @@ form {
 
 label {
   width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #1a2236;
 }
 
 input {
@@ -633,7 +634,7 @@ footer ul {
   }
 
   .collab-link {
-    margin: 59px 0 0 0 ;
+    margin-top: 59px;
     width: 54.27%;
   }
 
@@ -757,8 +758,6 @@ footer ul {
 
   label {
     width: 46.8%;
-    font-family: 'Poppins', sans-serif;
-    color: #1a2236;
   }
 
   label input {
