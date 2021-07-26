@@ -10,7 +10,7 @@
 }
 
 .invisible {
-  display: none;
+  display: none !important;
 }
 
 .burger-element {
@@ -74,6 +74,7 @@
 }
 
 nav {
+  position: relative;
   display: none;
   background-color: #fff;
   box-shadow: 0 0.5px 0 #dddfe6;
@@ -81,10 +82,21 @@ nav {
 
 .js-nav {
   display: block;
-  height: 100vh;
   background-image: url(./Media/menu-bkgr.svg);
   background-repeat: no-repeat;
-  
+}
+
+.cross {
+  position: absolute;
+  top: 20px;
+  right: 5%;
+  font-size: 34px;
+  color: #c5c5c5;
+  transition: 0.3s;
+}
+
+.cross:hover {
+  color: #1a2236;
 }
 
 ul {
@@ -98,9 +110,31 @@ nav ul {
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  height: 100px;
-  padding: 0;
-  margin: 0 37.22%;
+  height: 25.35vh;
+  padding-top: 25vh;
+  padding-left: 0;
+  margin: 0;
+}
+
+.deco-a {
+  position: absolute;
+  top: 13vh;
+  right: 17.81%;
+}
+
+.deco-b {
+  position: absolute;
+  top: 60vh;
+  left: 14%;
+}
+
+.mos-0 {
+  display: block;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  margin-top: 30vh;
+  padding-bottom: 10vh;
 }
 
 a {
@@ -602,11 +636,34 @@ footer ul {
     grid-area: nav;
   }
 
+  .js-nav {
+    background-image: none;
+  }
+
   nav ul {
     flex-direction: row;
+    height: 100px;
+    margin: 0 37.22%;
+    padding: 0;
   }
 
   .burger {
+    display: none;
+  }
+
+  .cross {
+    display: none !important;
+  }
+
+  .deco-a {
+    display: none;
+  }
+
+  .deco-b {
+    display: none;
+  }
+
+  .mos-0 {
     display: none;
   }
 
