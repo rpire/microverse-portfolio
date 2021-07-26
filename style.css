@@ -5,19 +5,19 @@
   margin: 6% 5% 0 10%;
 }
 
+.burger-element {
+  background-color: #c4c4c4; /* This color doesn't mach the template example */
+  width: 30px;
+  height: 5px;
+  margin-bottom: 4px;
+}
+
 .burger-container:hover .burger-element {
   background-color: #1a2236;
 }
 
 .invisible {
   display: none !important;
-}
-
-.burger-element {
-  background-color: #c4c4c4; /* This color doesn't mach the template example */
-  width: 30px;
-  height: 5px;
-  margin-bottom: 4px;
 }
 
 .collaboration {
