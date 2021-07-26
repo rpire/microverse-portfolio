@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins" />
+  <script src="script.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
@@ -23,7 +24,7 @@
 </head>
 <body>
   <div id="hello-wrapper">
-    <nav>
+    <nav id="menu">
       <ul>
         <li><a href="#" rel="noopener noreferrer">Hello</a></li>
         <li><a href="#" rel="noopener noreferrer">Portfolio</a></li>
@@ -32,9 +33,11 @@
       </ul>
     </nav>
     <div class="burger">
-      <div class="burger-element-1"></div>
-      <div class="burger-element-2"></div>
-      <div class="burger-element-3"></div>
+      <div id="burger-container" class="burger-container" onclick="toggleMenu()">
+         <div class="burger-element one"></div>
+        <div class="burger-element two"></div>
+        <div class="burger-element three"></div>
+      </div>
     </div>
     <section id="hello" class="hello">
       <h1>Charlie Giorgania</h1>
