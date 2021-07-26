@@ -655,14 +655,8 @@ footer ul {
     display: none !important;
   }
 
-  .deco-a {
-    display: none;
-  }
-
-  .deco-b {
-    display: none;
-  }
-
+  .deco-a,
+  .deco-b,
   .mos-0 {
     display: none;
   }
