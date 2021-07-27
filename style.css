@@ -685,7 +685,7 @@ footer ul {
   margin: 0 15.25% 0 6.25%;
 }
 
-.card-list li{
+.card-list li {
   display: flex;
   align-items: center;
   height: 20px;
@@ -732,7 +732,6 @@ footer ul {
 .card-button:hover {
   background-color: #1a2236;
   color: #fff;
-
 }
 
 /* ------------------------------------------------- */
@@ -1287,9 +1286,8 @@ footer ul {
   }
 
   .card-button {
-    width: 47.5%
+    width: 47.5%;
   }
-  
 }
 
 @media screen and (min-width: 1280px) {
