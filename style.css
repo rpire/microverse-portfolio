@@ -624,6 +624,118 @@ footer ul {
   display: none;
 }
 
+/* ----------------  Cards  ------------------ */
+.card-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  z-index: 98;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  z-index: 99;
+}
+
+.card h3 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 80%;
+  color: #1a2236;
+  margin-left: 6.25%;
+}
+
+.card img {
+  max-width: 700px;
+  width: 87.5%;
+  margin: 6.25%;
+}
+
+.card-cross {
+  align-self: flex-end;
+  font-size: 20px;
+  color: #c4c4c4;
+  width: 30px;
+  padding-top: 15px;
+  transition: 0.3s;
+}
+
+.card-cross:hover {
+  color: #1a2236;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  max-width: 350px;
+  padding: 0;
+  margin: 0 15.25% 0 6.25%;
+}
+
+.card-list li {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  border: 2px solid black;
+  font-size: 10.33px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  line-height: 80%;
+  text-align: center;
+  padding: 4px 8px;
+}
+
+#card-description {
+  max-width: 700px;
+  margin: 0 6.25%;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  margin: 25px 11.5%;
+}
+
+.card-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #fff;
+  color: #1a2236;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border: 2px solid #1a2236;
+  width: 100%;
+  height: 51px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+
+.card-button:hover {
+  background-color: #1a2236;
+  color: #fff;
+}
+
+/* ------------------------------------------------- */
+
 /* Start of media queries */
 
 @media screen and (min-width: 1025px) {
@@ -890,6 +1002,10 @@ footer ul {
     width: 100%;
   }
 
+  .works-box {
+    background-color: #1a2236f5;
+  }
+
   .project-1 .works-box {
     display: none;
     position: absolute;
@@ -1115,6 +1231,62 @@ footer ul {
   footer div {
     width: 30%;
     margin-left: 10%;
+  }
+
+  .card-container {
+    background-color: #1a2236f5;
+    height: 100vh;
+  }
+
+  .card {
+    position: relative;
+    top: 5vh;
+    left: 1%;
+    background-color: #fff;
+    max-width: none;
+    width: 90%;
+    height: 90vh;
+  }
+
+  .card-cross {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 40px;
+  }
+
+  .card h3 {
+    font-size: 48px;
+    margin-bottom: 34px;
+    margin-left: 4.17%;
+  }
+
+  .card-list {
+    font-size: 16px;
+    max-width: none;
+    width: 33.7%;
+    margin-left: 4.17%;
+  }
+
+  .card img {
+    max-width: none;
+    margin: 40px 4.17% 0 4.17%;
+  }
+
+  #card-description {
+    align-self: center;
+    margin-top: 70px;
+  }
+
+  .button-container {
+    align-self: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .card-button {
+    width: 47.5%;
   }
 }
 
