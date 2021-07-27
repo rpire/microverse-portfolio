@@ -5,12 +5,12 @@ const card1 = {
   technologies: [
     'HTML/CSS',
     'Ruby on Rails',
-    'JavaScript'
+    'JavaScript',
   ],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.<br><br>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   link: [
     'https://rpire.github.io/microverse-portfolio',
-    'https://github.com/rpire/microverse-portfolio/tree/modal'
+    'https://github.com/rpire/microverse-portfolio/tree/modal',
   ]
 };
 
@@ -19,13 +19,13 @@ const card2 = {
   technologies: [
     'HTML/CSS',
     'Ruby on Rails',
-    'JavaScript'
+    'JavaScript',
   ],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.<br><br>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   link: [
     'https://rpire.github.io/microverse-portfolio',
-    'https://github.com/rpire/microverse-portfolio/tree/modal'
-  ]
+    'https://github.com/rpire/microverse-portfolio/tree/modal',
+  ],
 };
 
 const card3 = {
@@ -33,13 +33,13 @@ const card3 = {
   technologies: [
     'HTML/CSS',
     'Ruby on Rails',
-    'JavaScript'
+    'JavaScript',
   ],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.<br><br>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   link: [
     'https://rpire.github.io/microverse-portfolio',
-    'https://github.com/rpire/microverse-portfolio/tree/modal'
-  ]
+    'https://github.com/rpire/microverse-portfolio/tree/modal',
+  ],
 };
 
 const card4 = {
@@ -47,13 +47,13 @@ const card4 = {
   technologies: [
     'HTML/CSS',
     'Ruby on Rails',
-    'JavaScript'
+    'JavaScript',
   ],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.<br><br>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   link: [
     'https://rpire.github.io/microverse-portfolio',
-    'https://github.com/rpire/microverse-portfolio/tree/modal'
-  ]
+    'https://github.com/rpire/microverse-portfolio/tree/modal',
+  ],
 };
 
 const card5 = {
@@ -61,13 +61,13 @@ const card5 = {
   technologies: [
     'HTML/CSS',
     'Ruby on Rails',
-    'JavaScript'
+    'JavaScript',
   ],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.<br><br>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   link: [
     'https://rpire.github.io/microverse-portfolio',
-    'https://github.com/rpire/microverse-portfolio/tree/modal'
-  ]
+    'https://github.com/rpire/microverse-portfolio/tree/modal',
+  ],
 };
 
 const card6 = {
@@ -75,41 +75,44 @@ const card6 = {
   technologies: [
     'HTML/CSS',
     'Ruby on Rails',
-    'JavaScript'
+    'JavaScript',
   ],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.<br><br>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   link: [
     'https://rpire.github.io/microverse-portfolio',
-    'https://github.com/rpire/microverse-portfolio/tree/modal'
-  ]
+    'https://github.com/rpire/microverse-portfolio/tree/modal',
+  ],
 };
 
 const projects = [card1, card2, card3, card4, card5, card6];
 function modal(number) {
   const card = document.querySelector('#card');
   card.classList.toggle('invisible');
-  let title = document.querySelector('#card-title');
-  let list = document.querySelector('#card-list');
+  const title = document.querySelector('#card-title');
+  const list = document.querySelector('#card-list');
   list.innerHTML = '';
-  let img = document.querySelector('.card-image');
-  let desc = document.querySelector('#card-description');
-  let buttonsrc = document.querySelector('#card-button-source');
-  let buttonlive = document.querySelector('#card-button-live');
+  const img = document.querySelector('.card-image');
+  const desc = document.querySelector('#card-description');
+  const buttonsrc = document.querySelector('#card-button-source');
+  const buttonlive = document.querySelector('#card-button-live');
 
   title.innerHTML = projects[number].title;
 
-  for (let i = 0; i < projects[number].technologies.length; i++) {
-    let li = document.createElement('li');
+  for (let i = 0; i < projects[number].technologies.length; i+=1) {
+    const li = document.createElement('li');
     li.textContent = projects[number].technologies[i];
     list.appendChild(li);
   }
 
-  img.setAttribute("src", cardImages + (number + 1) + ".svg");
+modal();
+
+  img.setAttribute('src', cardImages + (number + 1) + '.svg');
   buttonsrc.setAttribute('onclick', `window.open("${projects[number].link[1]}", "_blank");`);
   buttonlive.setAttribute('onclick', `window.open("${projects[number].link[0]}", "_blank");`);
   desc.innerHTML = projects[number].description;
 }
 function toggle() {
+  const card = document.querySelector('#card');
   card.classList.toggle('invisible');
 }
 toggle();
