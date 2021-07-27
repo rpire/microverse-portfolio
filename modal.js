@@ -36,6 +36,8 @@ const card1 = {
   const projects = [card1, card2, card3];
 
   function modal(number){
+    const card = document.querySelector('#card');
+    card.classList.toggle('invisible');
     let title = document.querySelector("#card-title");
     let list = document.querySelector("#card-list");
     list.innerHTML = '';
@@ -56,4 +58,7 @@ const card1 = {
     buttonsrc.setAttribute("onclick", "window.open('"+projects[number].link+"', '_blank');");
     buttonlive.setAttribute("onclick", "window.open('"+projects[number].link+"', '_blank');");
     desc.innerHTML = projects[number].description;
-};
+  };
+  function toggle(){
+    card.classList.toggle('invisible');
+  }

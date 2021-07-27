@@ -639,12 +639,38 @@ footer ul {
   z-index: 99;
 }
 
+#card-title {
+  color: #1a2236;
+  font-size: 3em;
+}
+
+.card-list>li{
+  width: 20%;
+  height: 3em;
+  border: 2px solid black;
+  font-size: 1em;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+#card-button-live, #card-button-source {
+  width: 20%;
+}
+
+#card-description {
+  width: 60%;
+  margin: auto;
+}
+
 .card-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   list-style-type: none;
   width: 50%;
+  margin: 0;
+  padding-bottom: 10px;
 }
 
 .button-container {
