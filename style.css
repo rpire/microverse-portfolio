@@ -624,6 +624,50 @@ footer ul {
   display: none;
 }
 
+/* --------------------  Cards  ---------------- */
+
+.card {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 50%;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.card-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #1a2236;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  width: 50%;
+}
+
+/* ------------------------------------------------- */
+
 /* Start of media queries */
 
 @media screen and (min-width: 1025px) {
