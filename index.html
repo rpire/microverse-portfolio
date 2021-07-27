@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <script src="script.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
@@ -23,18 +25,24 @@
 </head>
 <body>
   <div id="hello-wrapper">
-    <nav>
+    <nav id="menu">
+      <i id="cross" class="fas fa-times cross invisible" onclick="toggleMenu()"></i>
+      <img class="deco-a" src="./Media/menu-dots.svg" alt=" ">
+      <img class="deco-b" src="./Media/menu-dots.svg" alt=" ">
       <ul>
-        <li><a href="#" rel="noopener noreferrer">Hello</a></li>
-        <li><a href="#" rel="noopener noreferrer">Portfolio</a></li>
-        <li><a href="#" rel="noopener noreferrer">About</a></li>
-        <li><a href="#" rel="noopener noreferrer">Contact</a></li>
+        <li><a href="#hello" rel="noopener noreferrer" onclick="toggleMenu()">Hello</a></li>
+        <li><a href="#projects" rel="noopener noreferrer" onclick="toggleMenu()">Portfolio</a></li>
+        <li><a href="#about" rel="noopener noreferrer" onclick="toggleMenu()">About</a></li>
+        <li><a href="#contact" rel="noopener noreferrer" onclick="toggleMenu()">Contact</a></li>
       </ul>
+      <img class="mos-0" src="./Media/thur.svg" alt=" ">
     </nav>
     <div class="burger">
-      <div class="burger-element-1"></div>
-      <div class="burger-element-2"></div>
-      <div class="burger-element-3"></div>
+      <div id="burger-container" class="burger-container" onclick="toggleMenu()">
+         <div class="burger-element one"></div>
+        <div class="burger-element two"></div>
+        <div class="burger-element three"></div>
+      </div>
     </div>
     <section id="hello" class="hello">
       <h1>Charlie Giorgania</h1>
