@@ -1,4 +1,4 @@
-const cardImages = './Media/work-img-'
+const cardImages = './Media/work-img-';
 
 const card1 = {
   title: '1 Project',
@@ -11,7 +11,7 @@ const card1 = {
   link: [
     'https://rpire.github.io/microverse-portfolio',
     'https://github.com/rpire/microverse-portfolio/tree/modal',
-  ]
+  ],
 };
 
 const card2 = {
@@ -98,15 +98,13 @@ function modal(number) {
 
   title.innerHTML = projects[number].title;
 
-  for (let i = 0; i < projects[number].technologies.length; i+=1) {
+  for (let i = 0; i < projects[number].technologies.length; i += 1) {
     const li = document.createElement('li');
     li.textContent = projects[number].technologies[i];
     list.appendChild(li);
   }
 
-modal();
-
-  img.setAttribute('src', cardImages + (number + 1) + '.svg');
+  img.setAttribute('src', `${cardImages + (number + 1)}.svg`);
   buttonsrc.setAttribute('onclick', `window.open("${projects[number].link[1]}", "_blank");`);
   buttonlive.setAttribute('onclick', `window.open("${projects[number].link[0]}", "_blank");`);
   desc.innerHTML = projects[number].description;
@@ -116,3 +114,4 @@ function toggle() {
   card.classList.toggle('invisible');
 }
 toggle();
+modal();
