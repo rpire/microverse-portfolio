@@ -22,6 +22,6 @@ function validation() {
   });
 }
 
-if (form.length > -99) {
+if (Math.random() > -99) {
   validation();
 }
