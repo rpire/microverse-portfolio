@@ -252,7 +252,7 @@
     <form id="form">
       <label>
         *Name:
-        <input type="text" maxlength="30" placeholder=" Your name" name="name" required>
+        <input type="text" minlength="1" maxlength="30" placeholder=" Your name" name="name" required>
       </label>
       <label>
         *Email:
@@ -260,7 +260,7 @@
       </label>
       <label class="txt-area">
         *Message:
-        <textarea placeholder="Enter your message here..."  maxlength="500" required></textarea>
+        <textarea id="comment" placeholder="Enter your message here..." maxlength="500" required></textarea>
         <small>* Means required field</small>
       </label>
       <small id="message"></small>
