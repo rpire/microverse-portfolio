@@ -12,20 +12,17 @@ function validation() {
         event.preventDefault();
       });
       message.innerHTML = '* Make sure to fill your name';
-    }
-    else if (email !== email.toLowerCase()) {
+    } else if (email !== email.toLowerCase()) {
       form.addEventListener('submit', (event) => {
         event.preventDefault();
       });
       message.innerHTML = '* Make sure your email is in lower case.';
-    }
-    else if (comment.length < 5) {
+    } else if (comment.length < 5) {
       form.addEventListener('submit', (event) => {
         event.preventDefault();
       });
       message.innerHTML = '* Text area should have at least 5 characters';
-    }
-    else {
+    } else {
       form.submit();
     }
   }
