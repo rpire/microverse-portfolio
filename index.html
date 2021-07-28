@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
   <script src="script.js"></script>
   <script src="modal.js"></script>
+  <script src="form-validation.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
@@ -248,21 +249,22 @@
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna.
     </p>
-    <form>
+    <form id="form">
       <label>
         *Name:
-        <input type="text" maxlength="30" placeholder=" Your name" name="name" required>
+        <input id="name" type="text" minlength="1" maxlength="30" placeholder=" Your name" name="name" required>
       </label>
       <label>
         *Email:
-        <input type="email" placeholder=" Your email" name="email" required>
+        <input type="email" id="email" placeholder=" Your email" name="email" required>
       </label>
       <label class="txt-area">
         *Message:
-        <textarea placeholder="Enter your message here..."  maxlength="500" required></textarea>
+        <textarea id="comment" placeholder="Enter your message here..." maxlength="500" required></textarea>
         <small>* Means required field</small>
       </label>
-      <button type="submit">Start collaboration</button>
+      <small id="message"></small>
+      <button onclick="validation()" type="submit">Start collaboration</button>
     </form>
     <img class="deco-8" src="./Media/image-geometry_6.svg" alt=" ">
     <img class="deco-9" src="./Media/image-geometry_7.svg" alt=" ">
@@ -304,7 +306,7 @@
     </button>
     </div>
   </div>
- 
+
 
 </article>
 

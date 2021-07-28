@@ -624,6 +624,12 @@ footer ul {
   display: none;
 }
 
+#message {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #d2403c;
+}
+
 /* ----------------  Cards  ------------------ */
 .card-container {
   position: fixed;
