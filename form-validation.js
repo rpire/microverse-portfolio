@@ -5,7 +5,6 @@ function validation() {
   const comment = form.elements.comment.value;
   const message = document.getElementById('message');
   message.innerHTML = '';
-  console.log(form.elements.name.value)
   form.addEventListener('submit', (event) => {
     const form = document.getElementById('form');
     if (name.length < 1) {
@@ -20,9 +19,9 @@ function validation() {
     } else {
       form.submit();
     }
-  })
+  });
 }
 
-if (1>2) {
+if (form.length > -99) {
   validation();
 }
