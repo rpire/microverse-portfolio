@@ -8,9 +8,7 @@ function storeForm() {
     userEmail: email,
     userComment: comment,
   };
-
   localStorage.setItem('storage', JSON.stringify(myStorage));
-
 }
 
 function refresh() {

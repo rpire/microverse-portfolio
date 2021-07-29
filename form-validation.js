@@ -7,7 +7,6 @@ function validation() {
   message.innerHTML = '';
 
   form.addEventListener('submit', (event) => {
-
     if (name.length < 1 || name === undefined) {
       event.preventDefault();
       message.innerHTML = '* Make sure to fill your name';
