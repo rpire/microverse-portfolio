@@ -1,27 +1,28 @@
 function validation() {
+  
   const form = document.getElementById('form');
-  const name = form.elements.name.value;
+  const name = form.elements.nameu.value;
   const email = form.elements.email.value;
   const comment = form.elements.comment.value;
   const message = document.getElementById('message');
   message.innerHTML = '';
+
   form.addEventListener('submit', (event) => {
-    const form = document.getElementById('form');
-    if (name.length < 1) {
+
+    if (name.length < 1 || name == null) {
       event.preventDefault();
       message.innerHTML = '* Make sure to fill your name';
-    } else if (email !== email.toLowerCase()) {
+    } else if (email !== email.toLowerCase() || email < 1) {
       event.preventDefault();
       message.innerHTML = '* Make sure your email is in lower case.';
-    } else if (comment.length < 5) {
+    } else if (comment.length < 5 || comment == null) {
       event.preventDefault();
       message.innerHTML = '* Text area should have at least 5 characters';
     } else {
       form.submit();
     }
+
   });
 }
 
-if (Math.random() > -99) {
-  validation();
-}
+validation();
