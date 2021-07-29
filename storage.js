@@ -3,18 +3,19 @@ function storeForm() {
   const name = form.name.value;
   const email = form.email.value;
   const comment = form.comment.value;
-  let myStorage = {
+  const myStorage = {
     userName: name,
     userEmail: email,
     userComment: comment,
-  }
+  };
 
   localStorage.setItem('storage', JSON.stringify(myStorage));
+
 }
 
 function refresh() {
   if (localStorage.getItem('storage')) {
-  const oldStorage = localStorage.getItem('storage');
+    const oldStorage = localStorage.getItem('storage');
     const newStorage = JSON.parse(oldStorage);
     const form = document.getElementById('form');
     form.name.value = newStorage.userName;
