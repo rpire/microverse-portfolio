@@ -12,6 +12,7 @@
   <script src="script.js"></script>
   <script src="modal.js"></script>
   <script src="form-validation.js"></script>
+  <script src="storage.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
@@ -252,15 +253,15 @@
     <form id="form">
       <label>
         *Name:
-        <input id="name" type="text" minlength="1" maxlength="30" placeholder=" Your name" name="name" required>
+        <input id="name" type="text" minlength="1" maxlength="30" placeholder=" Your name" name="name" onchange="storeForm()">
       </label>
       <label>
         *Email:
-        <input type="email" id="email" placeholder=" Your email" name="email" required>
+        <input type="email" id="email" placeholder=" Your email" name="email" onchange="storeForm()">
       </label>
       <label class="txt-area">
         *Message:
-        <textarea id="comment" placeholder="Enter your message here..." maxlength="500" required></textarea>
+        <textarea id="comment" placeholder="Enter your message here..." maxlength="500" onchange="storeForm()"></textarea>
         <small>* Means required field</small>
       </label>
       <small id="message"></small>
