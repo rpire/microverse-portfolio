@@ -1,7 +1,5 @@
-const cardImages = './Media/work-img-';
-
 const card1 = {
-  title: '1 Project',
+  title: 'OLC Re-opening Site',
   technologies: [
     'HTML/CSS',
     'Ruby on Rails',
@@ -9,13 +7,14 @@ const card1 = {
   ],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.<br><br>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   link: [
-    'https://rpire.github.io/microverse-portfolio',
-    'https://github.com/rpire/microverse-portfolio/tree/modal',
+    'https://rpire.github.io/module-capstone-1',
+    'https://github.com/rpire/module-capstone-1',
   ],
+  image: './Media/Project Screenshots/module-capstone-1.png',
 };
 
 const card2 = {
-  title: '2 Project',
+  title: 'Awesome Books',
   technologies: [
     'HTML/CSS',
     'Ruby on Rails',
@@ -23,13 +22,14 @@ const card2 = {
   ],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.<br><br>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   link: [
-    'https://rpire.github.io/microverse-portfolio',
-    'https://github.com/rpire/microverse-portfolio/tree/modal',
+    'https://rpire.github.io/awesome-books',
+    'https://github.com/rpire/awesome-books',
   ],
+  image: './Media/Project Screenshots/awesome-books.png',
 };
 
 const card3 = {
-  title: '3 Project',
+  title: 'Reinas Pepiadas',
   technologies: [
     'HTML/CSS',
     'Ruby on Rails',
@@ -37,13 +37,14 @@ const card3 = {
   ],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.<br><br>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   link: [
-    'https://rpire.github.io/microverse-portfolio',
-    'https://github.com/rpire/microverse-portfolio/tree/modal',
+    'https://rpire.github.io/reinas-pepiadas',
+    'https://github.com/rpire/reinas-pepiadas',
   ],
+  image: './Media/Project Screenshots/reinas-pepiadas.png',
 };
 
 const card4 = {
-  title: '4 Project',
+  title: 'To-Do List',
   technologies: [
     'HTML/CSS',
     'Ruby on Rails',
@@ -51,9 +52,10 @@ const card4 = {
   ],
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.<br><br>Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
   link: [
-    'https://rpire.github.io/microverse-portfolio',
-    'https://github.com/rpire/microverse-portfolio/tree/modal',
+    'https://rpire.github.io/to-do-list/dist/index.html',
+    'https://github.com/rpire/to-do-list',
   ],
+  image: './Media/Project Screenshots/to-do-list.png',
 };
 
 const card5 = {
@@ -68,6 +70,7 @@ const card5 = {
     'https://rpire.github.io/microverse-portfolio',
     'https://github.com/rpire/microverse-portfolio/tree/modal',
   ],
+  image: './Media/work-img-5.svg',
 };
 
 const card6 = {
@@ -82,6 +85,7 @@ const card6 = {
     'https://rpire.github.io/microverse-portfolio',
     'https://github.com/rpire/microverse-portfolio/tree/modal',
   ],
+  image: './Media/work-img-6.svg',
 };
 
 const projects = [card1, card2, card3, card4, card5, card6];
@@ -104,7 +108,7 @@ function modal(number) {
     list.appendChild(li);
   }
 
-  img.setAttribute('src', `${cardImages + (number + 1)}.svg`);
+  img.setAttribute('src', projects[number].image);
   buttonsrc.setAttribute('onclick', `window.open("${projects[number].link[1]}", "_blank");`);
   buttonlive.setAttribute('onclick', `window.open("${projects[number].link[0]}", "_blank");`);
   desc.innerHTML = projects[number].description;
