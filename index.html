@@ -244,7 +244,7 @@
     <p>
       Do not doubt on contacting me if you could use my contributions to your team!
     </p>
-    <form id="form">
+    <form id="form" action="https://formspree.io/f/mlezjyla" method="POST">
       <label>
         *Name:
         <input id="name" type="text" minlength="1" maxlength="30" placeholder=" Your name" name="name" onchange="storeForm()">
@@ -255,10 +255,10 @@
       </label>
       <label class="txt-area">
         *Message:
-        <textarea id="comment" placeholder="Enter your message here..." maxlength="500" onchange="storeForm()"></textarea>
+        <textarea id="message" name="message" placeholder="Enter your message here..." maxlength="500" onchange="storeForm()"></textarea>
         <small>* Means required field</small>
       </label>
-      <small id="message"></small>
+      <small id="alert"></small>
       <button onclick="validation()" type="submit">Start collaboration</button>
     </form>
     <img class="deco-8" src="./Media/image-geometry_6.svg" alt=" ">
