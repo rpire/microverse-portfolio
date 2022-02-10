@@ -6,8 +6,8 @@ const card1 = {
   ],
   description: 'Covid-19 Metrics is an API based web app that fetches information about covid-19 cases in the United Kingdom and renders this information in a UI. It\'s Home page displays confirmed cases for the United Kingdom and its regions. Each region has a Details page to which you can navigate by clicking on the region cards displayed in the Home page. When you navigate to one of the region details pages, the app will render more specific details for that particular region. Region details include information like confirmed cases, deaths, and recovered patients.',
   link: [
-    'https://rpire.github.io/module-capstone-1',
-    'https://github.com/rpire/module-capstone-1',
+    'https://rpire.github.io/covid-metrics',
+    'https://github.com/rpire/covid-metrics',
   ],
   image: 'https://raw.githubusercontent.com/rpire/covid-metrics/dev/desktop_screenshot.png',
 };
