@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="./Media/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rubén D. Pire | Portfolio</title>
   <link rel="stylesheet" href="style.css">
@@ -33,10 +34,10 @@
       <img class="deco-a" src="./Media/menu-dots.svg" alt=" ">
       <img class="deco-b" src="./Media/menu-dots.svg" alt=" ">
       <ul>
-        <li><a href="#hello" rel="noopener noreferrer" onclick="toggleMenu()">Hello</a></li>
-        <li><a href="#projects" rel="noopener noreferrer" onclick="toggleMenu()">Portfolio</a></li>
-        <li><a href="#about" rel="noopener noreferrer" onclick="toggleMenu()">About</a></li>
-        <li><a href="#contact" rel="noopener noreferrer" onclick="toggleMenu()">Contact</a></li>
+        <li><a href="#hello-t" rel="noopener noreferrer" onclick="toggleMenu()">Hello</a></li>
+        <li><a href="#projects-t" rel="noopener noreferrer" onclick="toggleMenu()">Portfolio</a></li>
+        <li><a href="#about-t" rel="noopener noreferrer" onclick="toggleMenu()">About</a></li>
+        <li><a href="#contact-t" rel="noopener noreferrer" onclick="toggleMenu()">Contact</a></li>
       </ul>
       <img class="mos-0" src="./Media/thur.svg" alt=" ">
     </nav>
@@ -48,13 +49,13 @@
       </div>
     </div>
     <section id="hello" class="hello">
-      <h1>Rubén D. Pire</h1>
+      <h1 id="hello-t">Rubén D. Pire</h1>
       <p>
         Hello! I am a software developer! I can help you build a product, feature
-        or website. Taka a look of my works. If you like what you see and have a
-        project you need coded, don’t hesitate and contact me.
+        or website. Take a look of my works. If you like what you see and have a
+        project you need coded, don&apos;t hesitate and contact me.
       </p>
-      <a class="collab-link" href="#contact" rel="noopener noreferrer">
+      <a class="collab-link" href="#contact-t" rel="noopener noreferrer">
         <div class="collab-button">Start Collaboration</div>
       </a>
       <img class="deco-0" src="./Media/image_dots.svg" alt=" ">
@@ -67,16 +68,15 @@
   <section id="projects" class="works">
     <ul class="works-container">
       <li class="c1">
-        <h2>Projects</h2>
+        <h2 id="projects-t">Projects</h2>
         <img class="deco-1" src="./Media/image_dots.svg" alt=" ">
         <div class="project-1">
-          <img class="works-img" src="./Media/Project Screenshots/module-capstone-1.png" alt="OLC site screenshot">
+          <img class="works-img" src="https://raw.githubusercontent.com/rpire/covid-metrics/dev/desktop_screenshot.png" alt="Covid Metrics screenshot">
           <div class="works-box">
-            <h3>OLC Re-opening Website</h3>
+            <h3>Covid Metrics</h3>
             <ul class="lang-container">
-              <li class="lang-box">HTML/CSS</li>
-              <li class="lang-box">Ruby on Rails</li>
-              <li class="lang-box">JavaScript</li>
+              <li class="lang-box">React</li>
+              <li class="lang-box">Redux</li>
             </ul>
             <a href="#portfolio" rel="noopener noreferrer" class="works-link" onclick="modal(0)">
               <div class="works-button">
@@ -91,13 +91,11 @@
         <div class="c2">
           <div class="c21">
             <div class="project-2">
-              <img class="works-img" src="./Media/Project Screenshots/awesome-books.png" alt="awesome books screenshot">
+              <img class="works-img" src="./Media/Project Screenshots/preview.png" alt="Math Magicians screenshot">
               <div class="works-box">
-                <h3>Awesome Books</h3>
+                <h3>Math Magicians</h3>
                 <ul class="lang-container">
-                  <li class="lang-box">HTML/CSS</li>
-                  <li class="lang-box">Ruby on Rails</li>
-                  <li class="lang-box">JavaScript</li>
+                  <li class="lang-box">React</li>
                 </ul>
                 <a href="#portfolio" rel="noopener noreferrer" class="works-link" onclick="modal(1)">
                   <div class="works-button">
@@ -111,13 +109,12 @@
           </div>
           <div class="c22">
             <div class="project-3">
-              <img class="works-img" src="./Media/Project Screenshots/reinas-pepiadas.png" alt="reinas pepiadas screenshot">
+              <img class="works-img" src="./Media/Project Screenshots/paytracker_screenshot.png" alt="Paytracker screenshot">
               <div class="works-box">
-                <h3>Reinas Pepiadas</h3>
+                <h3>Paytracker</h3>
                 <ul class="lang-container">
-                  <li class="lang-box">HTML/CSS</li>
                   <li class="lang-box">Ruby on Rails</li>
-                  <li class="lang-box">JavaScript</li>
+                  <li class="lang-box">SASS</li>
                 </ul>
                 <a href="#portfolio" rel="noopener noreferrer" class="works-link" onclick="modal(2)">
                   <div class="works-button">
@@ -132,12 +129,12 @@
         </div>
         <div class="c3">
           <div class="project-4">
-            <img class="works-img" src="./Media/Project Screenshots/to-do-list.png" alt="to-do list screenshot">
+            <img class="works-img" src="https://raw.githubusercontent.com/DammyShittu/Poke-dex/main/src/img/desktop-screenshot.png" alt="Poke-Dex screenshot">
             <div class="works-box">
-              <h3>To-Do List</h3>
+              <h3>Poke-Dex</h3>
               <ul class="lang-container">
-                <li class="lang-box">HTML/CSS</li>
-                <li class="lang-box">Ruby on Rails</li>
+                <li class="lang-box">HTML</li>
+                <li class="lang-box">CSS</li>
                 <li class="lang-box">JavaScript</li>
               </ul>
               <a href="#portfolio" rel="noopener noreferrer" class="works-link" onclick="modal(3)">
@@ -149,12 +146,12 @@
             </div>
           </div>
           <div class="project-5">
-            <img class="works-img" src="./Media/work-img-5.svg" alt="a tilted Macbook">
+            <img class="works-img" src="./Media/Project Screenshots/module-capstone-1.png" alt="OLC Re-opening Site screenshot">
             <div class="works-box">
-              <h3>Project name goes here</h3>
+              <h3>OLC Re-opening Site</h3>
               <ul class="lang-container">
-                <li class="lang-box">HTML/CSS</li>
-                <li class="lang-box">Ruby on Rails</li>
+                <li class="lang-box">HTML</li>
+                <li class="lang-box">CSS</li>
                 <li class="lang-box">JavaScript</li>
               </ul>
               <a href="#portfolio" rel="noopener noreferrer" class="works-link" onclick="modal(4)">
@@ -173,12 +170,12 @@
           <img class="deco-5" src="./Media/image-geometry_4.svg" alt=" ">
         </div>
         <div class="project-6">
-          <img class="works-img" src="./Media/work-img-6.svg" alt="iPhone lying on a Macbook">
+          <img class="works-img" src="./Media/Project Screenshots/awesome-books.png" alt="Awesome Books screenshot">
           <div class="works-box">
-            <h3>Project name goes here</h3>
+            <h3>Awesome Books</h3>
             <ul class="lang-container">
-              <li class="lang-box">HTML/CSS</li>
-              <li class="lang-box">Ruby on Rails</li>
+              <li class="lang-box">HTML</li>
+              <li class="lang-box">Bootstrap</li>
               <li class="lang-box">JavaScript</li>
             </ul>
             <a href="#portfolio" rel="noopener noreferrer" class="works-link" onclick="modal(5)">
@@ -194,14 +191,14 @@
   </section>
   <section id="about-wrapper" class="about">
     <div id="about">
-      <h2>About</h2>
+      <h2 id="about-t">About</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea
-        eiusmod
+        I am a full-stack web developer and React enthusiast with a passion for clean and
+        easy-to-follow code. Experienced in pair programming and remote working. Fluent in several
+        languages, frameworks, and technologies, and a team player with an optimistic personality
+        that can boost the morale of any team.
       </p>
-      <a href="https://github.com/rpire/microverse-portfolio" rel="noopener noreferrer" class="about-link">
+      <a href="./resume.pdf" rel="noopener noreferrer" target="_blank" class="about-link">
         <div class="cv-box">
           <span>Get my CV</span>
           <div></div>
@@ -224,19 +221,17 @@
         <ul>
           <li>Bootstrap</li>
           <li>Ruby on rails</li>
-          <li>RSpec</li>
-          <li>Capibara</li>
-          <li>Selenium</li>
+          <li>React</li>
         </ul>
         <img src="./Media/Group-18.svg" alt=" " class="about-img">
       </div>
       <div class="skills">
         <h3>Skills</h3>
         <ul>
-          <li>Codekit</li>
-          <li>Codepen</li>
+          <li>Pair-Programming</li>
+          <li>Remote Work</li>
+          <li>Git</li>
           <li>GitHub</li>
-          <li>GitLAb</li>
           <li>Terminal</li>
         </ul>
         <img src="./Media/ic_skills.svg" alt=" " class="about-img">
@@ -245,10 +240,9 @@
     </div>
   </section>
   <section id="contact" class="contact-me">
-    <h2>Get started</h2>
+    <h2 id="contact-t">Get started</h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna.
+      Do not doubt on contacting me if you could use my contributions to your team!
     </p>
     <form id="form">
       <label>
@@ -272,16 +266,15 @@
   </section>
   <footer id="footer">
     <div class="get-resume">
-      <a class="get-cv-link" href="https://github.com/rpire/microverse-portfolio" rel="noopener noreferrer">Get my Resume</a>
+      <a class="get-cv-link" href="./resume.pdf" target="_blank" rel="noopener noreferrer">Get my Resume</a>
       <img src="./Media/cv-icon.svg" alt=" ">
     </div>
     <ul>
-      <li><a href="#" rel="noopener noreferrer"><img src="./Media/icon-1.svg" alt=" "></a></li>
-      <li><a href="#" rel="noopener noreferrer"><img src="./Media/icon-2.svg" alt=" "></a></li>
-      <li><a href="#" rel="noopener noreferrer"><img src="./Media/icon-3.svg" alt=" "></a></li>
-      <li><a href="#" rel="noopener noreferrer"><img src="./Media/icon-4.svg" alt=" "></a></li>
-      <li><a href="#" rel="noopener noreferrer"><img src="./Media/icon-5.svg" alt=" "></a></li>
-      <li><a href="#" rel="noopener noreferrer"><img src="./Media/ic_stackoverflow.svg" alt=" "></a></li>
+      <li><a href="https://angel.co/u/ruben-pire" rel="noopener noreferrer" target="_blank"><img src="./Media/icon-1.svg" alt=" "></a></li>
+      <li><a href="https://medium.com/@rubenpire7" rel="noopener noreferrer" target="_blank"><img src="./Media/icon-2.svg" alt=" "></a></li>
+      <li><a href="https://www.linkedin.com/in/ruben-d-pire/" rel="noopener noreferrer" target="_blank"><img src="./Media/icon-3.svg" alt=" "></a></li>
+      <li><a href="https://twitter.com/RubenPire7" rel="noopener noreferrer" target="_blank"><img src="./Media/icon-4.svg" alt=" "></a></li>
+      <li><a href="https://github.com/rpire" rel="noopener noreferrer" target="_blank"><img src="./Media/icon-5.svg" alt=" "></a></li>
     </ul>
   </footer>
 
