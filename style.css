@@ -624,7 +624,7 @@ footer ul {
   display: none;
 }
 
-#message {
+#alert {
   width: 100%;
   font-family: 'Poppins', sans-serif;
   color: #d2403c;
@@ -684,7 +684,6 @@ footer ul {
 .card-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   list-style-type: none;
   max-width: 350px;
   padding: 0;
@@ -702,6 +701,7 @@ footer ul {
   line-height: 80%;
   text-align: center;
   padding: 4px 8px;
+  margin-right: 15px;
 }
 
 #card-description {
