@@ -22,7 +22,7 @@ const card2 = {
     'https://rpire.github.io/math-magicians',
     'https://github.com/rpire/math-magicians',
   ],
-  image: './Media/Project Screenshots/preview.png',
+  image: './Media/project-screenshots/preview.png',
 };
 
 const card3 = {
@@ -36,7 +36,7 @@ const card3 = {
     'https://rpire-paytracker.herokuapp.com/',
     'https://github.com/rpire/budget-app',
   ],
-  image: './Media/Project Screenshots/paytracker_screenshot.png',
+  image: './Media/project-screenshots/paytracker_screenshot.png',
 };
 
 const card4 = {
@@ -66,7 +66,7 @@ const card5 = {
     'https://rpire.github.io/module-capstone-1',
     'https://github.com/rpire/module-capstone-1',
   ],
-  image: './Media/Project Screenshots/module-capstone-1.png',
+  image: './Media/project-screenshots/module-capstone-1.png',
 };
 
 const card6 = {
@@ -81,7 +81,7 @@ const card6 = {
     'https://rpire.github.io/awesome-books',
     'https://github.com/rpire/awesome-books',
   ],
-  image: './Media/Project Screenshots/awesome-books.png',
+  image: './Media/project-screenshots/awesome-books.png',
 };
 
 const projects = [card1, card2, card3, card4, card5, card6];
